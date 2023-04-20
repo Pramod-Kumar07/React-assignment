@@ -1,4 +1,4 @@
-export function Reactbenefit (){
+export default function Reactbenefit (){
     return(
         <>
             <h3>Benefits of React..</h3>
