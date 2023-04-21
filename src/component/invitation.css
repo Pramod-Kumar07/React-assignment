@@ -1,0 +1,14 @@
+
+
+span{
+    color: red;    
+    font-weight: bold;
+}
+
+.invitation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 100px;
+}
+
