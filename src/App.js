@@ -1,5 +1,6 @@
 import CTP from './Component/Lift_State_up';
 import CssProps from './Component/CssProp';
+import Form from './Component/formValidation';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <CTP click={handleClick}/>
       <CssProps name={obj.name} mycolor={obj.color}/>
+      <Form/>
     </div>
   );
 }
