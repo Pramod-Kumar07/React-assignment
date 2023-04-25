@@ -1,4 +1,7 @@
 import Card from "./Component/card";
+import image1 from "./Component/image1.jpg";
+import image2 from "./Component/image2.jpg";
+import image3 from "./Component/image3.JPG";
 
 function App() {
   const user1={
@@ -18,11 +21,11 @@ function App() {
   };
     return (
       <div>
-        <Card name={user1.name} designation={user1.designation} description={user1.description} image={user1.image}/>
+        <Card name={user1.name} designation={user1.designation} description={user1.description} image={image1}/>
         <br/>
-        <Card name={user2.name} designation={user2.designation} description={user2.description} />
+        <Card name={user2.name} designation={user2.designation} description={user2.description} image={image2} />
         <br/>
-        <Card name={user3.name} designation={user3.designation} description={user3.description} />
+        <Card name={user3.name} designation={user3.designation} description={user3.description} image={image3}/>
       </div>
     );
 }
