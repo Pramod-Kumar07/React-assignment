@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import CTP from './Component/Lift_State_up';
 import './App.css';
 
 function App() {
+  function handleClick(data){
+    alert(data.color);
+      }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CTP click={handleClick}/>
     </div>
   );
 }
 
 export default App;
+
+
+// Lifting State Up is a way to pass data from child to parent using call back function
