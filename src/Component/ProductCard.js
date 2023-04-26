@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProductCard.css"
 
-export default function ProductCard({details}){
+export default function ProductCard({data}){
     const {
         productId,
         productPic,
@@ -10,22 +10,21 @@ export default function ProductCard({details}){
         productDescription,
         Price,
         Rating
-    }= details
-
+    }=data;
+    
     function handleClick(){
-        alert("This is Product of Id "+ productId +", which is " + productName + " of brand " + Brand + " costing " + Price + " has been added in the cart, Please proceed to Pay!")
+        alert("Product added to cart")
     }
     return(
         <div className="product">
-        <div className="innerdiv">
-        <img className="image" src={productPic} alt="Product" />
-        <h3>{productName}</h3>
-        <h3>{Brand}</h3>
-        <p>{productDescription}</p>
-        <h2>{Price}</h2>
-        <p>Ratings : {Rating}</p>
-        </div>
-        <button onClick={handleClick}>ADD TO CART</button>
+            <div className="innerDiv">
+            <img src={productPic} alt="Product" />
+            <h2>{productName}</h2>
+            <h2>{Brand}</h2>
+            <p>{productDescription}</p>
+            <h3>{Price}</h3>
+            </div>
+            <button onClick={handleClick}>ADD TO CART</button>            
         </div>
     )
 }
