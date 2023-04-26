@@ -1,0 +1,27 @@
+input{
+    height: 40px;
+    width: 250px;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+button{
+    margin: 30px;
+    padding: 10px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+h1{
+    font-family: Calibri;
+    font-weight: bolder;
+}
+
+#h1{
+    font-family: Calibri;
+    font-weight: bolder;
+}
