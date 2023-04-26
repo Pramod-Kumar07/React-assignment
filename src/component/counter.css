@@ -1,0 +1,40 @@
+
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 300px;
+    
+}
+
+.up{
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    border: black solid 3px;
+    border-radius: 10px;
+    background-color: green;
+    box-shadow: 10px 10px 5px rgb(142, 223, 142) , 5px 5px 3px rgb(158, 200, 95);
+    font-weight: bold;
+}
+
+.down{
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    border: black solid 3px;
+    border-radius: 10px;
+    background-color: red;
+    box-shadow: 10px 10px 5px rgb(212, 92, 92) , 5px 5px 3px rgb(151, 48, 48);
+    font-weight: bold;
+}
+
+p{
+    font-weight: bolder;
+    font-size: larger;
+}
