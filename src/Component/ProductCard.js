@@ -13,7 +13,7 @@ export default function ProductCard({data}){
     }=data;
     
     function handleClick(){
-        alert("Product added to cart")
+        alert("Product added to cart with product id : " + productId)
     }
     return(
         <div className="product">

@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       {
-        productDetails.map((element, index)=>
+        productDetails.map((element)=>
         <li key={element.productId}><ProductCard data={element} /></li>)
       }
     </div>
