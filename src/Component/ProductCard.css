@@ -1,0 +1,29 @@
+.image{
+    height: 200px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.product{
+    height: 520px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+}
+
+.innerdiv{
+    margin: 10px;
+}
+h2{
+    color: red;
+}
+
+button{
+    background-color: orangered;
+    height: 50px;
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    border: none;
+}
