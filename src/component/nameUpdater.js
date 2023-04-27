@@ -6,7 +6,7 @@ export default function NameUpdater(){
     const [update,setUpdate]= useState(input)
 
     function handleClick(){
-        return(setInput(" "), setUpdate(input))
+        return(setInput(""), setUpdate(input))
     };
     return(
         <div>
