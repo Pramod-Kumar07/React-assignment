@@ -4,12 +4,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(75, 143, 170);
     height: 500px;
     width: 500px;
     margin-top: 50px;
     margin-left: 300px;
-    
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(95, 136, 225);
 }
 
 .up{
@@ -37,4 +38,5 @@
 p{
     font-weight: bolder;
     font-size: larger;
+    background-color:  rgb(75, 143, 170);
 }
