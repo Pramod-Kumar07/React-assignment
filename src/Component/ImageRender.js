@@ -9,15 +9,23 @@ function ImageRender() {
 
     const [index, setIndex] = useState(0);
 
-    function handlePick () {
-        index!== image.length-1 ? setIndex(index+1) : setIndex(0);
-    }
-       
+    const imageRef= useRef();
+  
 
+    function handleClick() {
+      index!== image.length-1 ? setIndex(index+1) : setIndex(0)
+    }
+
+
+    useEffect(()=>{
+        imageRef.current.src=image[index];
+    },[index]);
+       
+    
   return (
     <div>
-        <img src={image[index]} alt="badiya" />
-        <button onClick={handlePick}>Next image</button>
+        <img alt="badiya" ref={imageRef} />
+        <button onClick={handleClick } >Next image</button>
     </div>
   );
 }
