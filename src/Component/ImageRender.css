@@ -1,0 +1,9 @@
+img{
+    width: 350px;
+    height: 500px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
