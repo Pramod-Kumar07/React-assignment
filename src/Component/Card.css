@@ -1,4 +1,21 @@
-img{
+.container{
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.185);
+    margin: 10px;
     height: 400px;
-    width: 500px;
+    width: 300px;
+}
+
+p{
+    border: 2px solid black;
+    border-radius: 40px;
+    width: fit-content;
+    padding: 5px;
+    font-size: small;
+}
+
+img{
+    border: 2px solid black;
+    border-radius: 70px;
 }

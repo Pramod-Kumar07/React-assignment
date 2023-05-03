@@ -1,8 +1,7 @@
 import React from "react";
-import { useState } from "react";
+import './Card.css'
 
 function Card({data}){
-    const [isClick, setIsClick]=useState(false)
     const{
         id,
         email,
@@ -10,18 +9,14 @@ function Card({data}){
         last_name,
         avatar
     }=data;
+
+
     return (
-        <div>
-            { !isClick ?
-            <div>
-            <p>{id}</p>
+        <div className='container'>
+            <p>id: {id}</p>
             <img src={avatar} />
-            <h3>{first_name} {last_name}</h3>
-            <h6>{email}</h6>
-            </div> :
-            <h3>No Users yet</h3>
-            }
-            <button onClick={isClick}>Get Users</button>
+            <h3>Name: {first_name} {last_name}</h3>
+            <h6>Email: {email}</h6>            
         </div>
 
     )
