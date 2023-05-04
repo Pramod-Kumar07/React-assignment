@@ -7,7 +7,7 @@ function Otpgenerator(){
 
 
     function getOtp() {
-        const mobileNoRegex=/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/;
+        const mobileNoRegex=/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[6789]\d{9}$/;
         if(!mobileNoRegex.test(mobileNo)){
             alert('Invalid Mobile Number! Please Enter Valid Mobile Number..');
             return;
