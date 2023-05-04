@@ -1,0 +1,17 @@
+.mbn{
+    padding-left: 10px;
+    margin: 10px;
+    font-size: large;
+    font-family: cursive;
+    width: 200px;
+    height: 30px;
+}
+
+.btn{
+    font-size: large;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10px;
+    height: 30px;
+    width: fit-content;
+}

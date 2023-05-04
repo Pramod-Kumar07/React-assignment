@@ -1,14 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import './Otpgenerator.css'
 
 function Otpgenerator(){
     const [mobileNo, setMobileNo]= useState();
 
-
-
-    // function validateMobileNo(){
-              
-    // }
 
     function getOtp() {
         const mobileNoRegex=/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/;
@@ -35,12 +31,13 @@ function Otpgenerator(){
     return(
         <div>
             <input 
+                className="mbn"
                 type="tel" 
-                placeholder="enter mobile number" 
+                placeholder="enter mobile number..." 
                 value={mobileNo}
                 onChange={(e)=>setMobileNo(e.target.value)}
             />
-            <button onClick={getOtp} >
+            <button className="btn" onClick={getOtp} >
                 Get OTP
             </button>
         </div>
