@@ -16,16 +16,16 @@ export default function Header() {
                 <button className={styles.menu}><i class="fa fa-bars"></i></button>
                 </div>
             </header>
-            <div className={styles.wrapper}>
+            {/* <div className={styles.wrapper}>
                 <div className={styles.text}>
                 <h1 className={styles.heading}>Be There</h1>
                 <p>Deliver brilliant messages in the moments <br/> that truely define your brand</p>
                 <button className={styles.button}>See How </button>
-                {/* <div className={styles.image}>
+                <div className={styles.image}>
                 <img src='https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__480.jpg' alt='image' />
-                </div> */}
                 </div>
-            </div>
+                </div> */}
+            {/* </div> */}
         </div>
     )
 }
