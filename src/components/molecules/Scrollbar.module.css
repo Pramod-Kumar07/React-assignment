@@ -1,0 +1,21 @@
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container{
+    display: flex;
+    /* border: 3px solid rgb(8, 119, 167); */
+    width: 80%;
+    height: 53%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}

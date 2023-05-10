@@ -50,7 +50,7 @@ const data=[{
 },{
     image:'https://images.pexels.com/photos/1450114/pexels-photo-1450114.jpeg?auto=compress&cs=tinysrgb&w=600',
     name:'Ravindra Kumar',
-    education:'NIT Warangal',
+    education:'IIT Mandi',
     designation:'Developer',
     organisation:'Info Tech',
     experience:'3 Yrs Exp.',

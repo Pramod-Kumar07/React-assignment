@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProfileCard.css';
+import styles from './ProfileCard.module.css';
 
 function ProfileCard({info}){
     const {
@@ -10,12 +10,12 @@ function ProfileCard({info}){
         organisation,
         experience
     } = info;
-    return(       
-        <div className='wrapper'>
-            <img className='image' src={image} alt='DP'/>
-            <h4 className='name'>{name} , {education}</h4>
-            <p className='designation'>{designation} @ {organisation}</p>
-            <p className='exp'>{experience}</p>
+    return(
+        <div className={styles.card}>
+            <img className={styles.image} src={image} alt='DP'/>
+            <h4 className={styles.name}>{name} , {education}</h4>
+            <p className={styles.designation}>{designation} @ {organisation}</p>
+            <p className={styles.exp}>{experience}</p>
         </div>
     )
 }
