@@ -1,0 +1,66 @@
+const data=[{
+    image:'https://images.pexels.com/photos/15598315/pexels-photo-15598315.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    name:'Pawan Kumar',
+    education:'IIT Delhi',
+    designation:'CEO',
+    organisation:'Baby Monkey',
+    experience:'10 Yrs Exp.',
+},{
+    image:'https://images.pexels.com/photos/16645005/pexels-photo-16645005.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    name:'Rohit Kumar',
+    education:'IIT Kanpur',
+    designation:'MD',
+    organisation:'Baby Monkey',
+    experience:'8 Yrs Exp.',
+},{
+    image:'https://images.pexels.com/photos/16564746/pexels-photo-16564746.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    name:'Ajay Kumar',
+    education:'IIT Madras',
+    designation:'CTO',
+    organisation:'Baby Monkey',
+    experience:'9 Yrs Exp.',
+},{
+    image:'https://images.pexels.com/photos/11432781/pexels-photo-11432781.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    name:'Kumud Verma',
+    education:'IIT Kharagpur',
+    designation:'Senior Manager',
+    organisation:'Royal Bandits',
+    experience:'5 Yrs Exp.',
+},{
+    image:'https://images.pexels.com/photos/16490186/pexels-photo-16490186.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    name:'Anamika Verma',
+    education:'IIT Bombay',
+    designation:'Manager',
+    organisation:'Royal Bandits',
+    experience:'4 Yrs Exp.',
+},{
+    image:'https://images.pexels.com/photos/15602128/pexels-photo-15602128.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    name:'Minnie',
+    education:'NIT Trichy',
+    designation:'Senior Developer',
+    organisation:'Home Hacker',
+    experience:'4 Yrs Exp.',
+},{
+    image:'https://images.pexels.com/photos/15571088/pexels-photo-15571088.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+    name:'Laxman Kumar',
+    education:'IIT BHU',
+    designation:'HR Associate',
+    organisation:'Home Hacker',
+    experience:'7 Yrs Exp.',
+},{
+    image:'https://images.pexels.com/photos/1450114/pexels-photo-1450114.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name:'Ravindra Kumar',
+    education:'NIT Warangal',
+    designation:'Developer',
+    organisation:'Info Tech',
+    experience:'3 Yrs Exp.',
+},{
+    image:'https://images.pexels.com/photos/3771089/pexels-photo-3771089.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name:'Navneet Kumar',
+    education:'IIT Mandi',
+    designation:'Developer',
+    organisation:'Info Tech',
+    experience:'3 Yrs Exp.',
+}]
+
+export default data;

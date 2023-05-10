@@ -1,0 +1,15 @@
+.wrapper{
+    height: 48vh;
+    width: 18vw;
+    border: 0.2rem solid black;
+    border-radius: 20px;
+    padding: 1rem; 
+    background-image: linear-gradient(to right, rgb(45, 146, 246), rgb(93, 225, 175));
+}
+
+.image{
+    height: 8em;
+    width: 8em;
+    border: 2px solid black;
+    border-radius: 50%;
+}
