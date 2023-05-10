@@ -16,7 +16,6 @@ function Header() {
     <div>
       <div className="nav">
         <div className="logo">
-          <FaGlobe />
           <img src={logo} alt="logoimage" />
         </div>
         <div className="menu">

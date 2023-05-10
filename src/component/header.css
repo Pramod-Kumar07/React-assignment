@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1b4dd3;
+  background-color: rgb(100, 12, 12);
   color: white;
   padding: 10px;
 }
@@ -42,7 +42,7 @@
 
 .menu .active {
   background-color: white;
-  color: #1b4dd3;
+  color:  rgb(100, 12, 12);
 }
 
 .hero {
@@ -52,7 +52,6 @@
   padding: 80px;
 }
 .hero_image {
-  /* display: flex; */
   flex-basis: 50%;
 }
 
@@ -114,7 +113,7 @@
     right: 0px;
     width: 250px;
     height: 70%;
-    background-color: #1b4dd3;
+    background-color:  rgb(100, 12, 12);
     color: white;
     display: block;
     opacity: 0.9;
@@ -130,7 +129,7 @@
     line-height: 50px;
   }
   .sidebar ul li:hover {
-    background-color: #4461b1;
+    background-color:  rgb(100, 12, 12);
   }
   .logo > svg {
     margin-right: 0px;
