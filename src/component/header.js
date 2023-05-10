@@ -1,31 +1,68 @@
-import React from 'react';
-import styles from './header.module.css';
+import React, { useState } from "react";
+import { FaGlobe, FaBars, FaTimes } from "react-icons/fa";
+import logo from "./../logo.png";
+import picture from "./../picture.jpg";
+import { BsFillPlayFill } from "react-icons/bs";
+import "./header.css";
 
-export default function Header() {
-    return(
-        <div>
-            <header className={styles.header}>
-                <img className={styles.logo} src='https://de6-engine.flamingtext.com/netfu/tmp28000/coollogo_com-4314303.png' alt='logo' />
-                <div className={styles.container}> 
-                <section className={styles.sec}>Home</section>
-                <section className={styles.sec}>About</section>
-                <section className={styles.sec}>Projects</section>
-                <section className={styles.sec}>Videos</section>
-                <section className={styles.sec}>Contact</section>
-                <button className={styles.btn}>Login</button>
-                <button className={styles.menu}><i class="fa fa-bars"></i></button>
-                </div>
-            </header>
-            {/* <div className={styles.wrapper}>
-                <div className={styles.text}>
-                <h1 className={styles.heading}>Be There</h1>
-                <p>Deliver brilliant messages in the moments <br/> that truely define your brand</p>
-                <button className={styles.button}>See How </button>
-                <div className={styles.image}>
-                <img src='https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__480.jpg' alt='image' />
-                </div>
-                </div> */}
-            {/* </div> */}
+function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleBar = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <div>
+      <div className="nav">
+        <div className="logo">
+          <FaGlobe />
+          <img src={logo} alt="logoimage" />
         </div>
-    )
-}
+        <div className="menu">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Videos</li>
+            <li>Contact</li>
+            <li className="active">Login</li>
+          </ul>
+          <div className="hamburger" onClick={toggleBar}>
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </div>
+        </div>
+      </div>
+
+      <div className="hero">
+        <div className="hero_image">
+          <img src={picture} alt="hero" />
+        </div>
+        <div className="hero_content">
+          <div className="hero_text">
+            <h1>Be There</h1>
+            <p>Deliver brilliant messages in the moments that truly define your brand</p>
+          </div>
+          <div className="hero_btn">
+            <button>
+              <a href="#">See How</a> <BsFillPlayFill />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className={`sidebar ${menuOpen ? "show" : ""}`}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Videos</li>
+          <li>Contact</li>
+          <li>Login</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
