@@ -9,61 +9,57 @@ function TicTacToe(){
     const [winner, setWinner] = useState('');
 
     function handleChance(cellNum) {
-        
+
+
         if(cell[cellNum]!==''){
             return;
         }
+
+        cell[cellNum]=chance;
+        setCell(cell)
         if(chance==='X'){
-            cell[cellNum]='X';
             setChance('O');
         }else{
-            cell[cellNum]='O';
             setChance('X');
         }
 
         handelWinner(cell);
+
     }
 
     function handelWinner(cell) {
-        let combination={
-            across:[
+        let combination=[
                 [0,1,2],
                 [3,4,5],
-                [6,7,8]
-            ],
-            down: [
+                [6,7,8],
                 [0,3,6],
                 [1,4,7],
-                [2,5,8]
-            ],
-            diagonals: [
+                [2,5,8],
                 [0,4,8],
-                [2,4,6]
-            ]
-        };
+                [2,4,6],
+            ];
 
-        for(let combo in combination){
-            combination[combo].forEach((pattern) => {
+            combination.forEach((e) => {
                 if(
-                    cell[pattern[0]]===''||
-                    cell[pattern[1]]===''||
-                    cell[pattern[2]]===''
+                    cell[e[0]]!==''&&
+                    cell[e[1]]!==''&&
+                    cell[e[2]]!==''
                 ){
-                }else if(
-                    cell[pattern[0]] === cell[pattern[1]] &&
-                    cell[pattern[1]] === cell[pattern[2]]
-                ){
-                    setWinner(cell[pattern[0]])
+                    if(
+                    cell[e[0]] === cell[e[1]] &&
+                    cell[e[1]] === cell[e[2]]
+                    ){
+                    setWinner(cell[e[0]]);
+                    setChance('');
+                    }
                 }
-                
             });
         }
-
-    }
 
     function handelReset(){
         setCell(Array(9).fill(''));
         setWinner('');
+        setChance('X');
     }
 
     function Box({cellNum}){
