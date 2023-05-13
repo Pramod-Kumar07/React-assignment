@@ -1,6 +1,8 @@
-const Heading=({tasks})=>{
+import React from 'react';
+
+function Heading(props) {
     return (
-        <h1>Pending Tasks ({tasks}) </h1>
+        <h1>Pending Tasks ({props.numTask}) </h1>
     )
 }
 

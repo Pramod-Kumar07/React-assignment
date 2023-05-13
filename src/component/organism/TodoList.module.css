@@ -1,7 +1,11 @@
-.main{
+.container{
+    min-height: max-content;
+    min-width: 30%;
     background-color: black;
     opacity: 80%;
     border: 2px solid blue;
     border-radius: 2rem;
     padding: 2rem;
 }
+
+

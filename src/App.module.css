@@ -1,9 +1,7 @@
-.App {
-  text-align: center;
-}
 
 
-.App-header {
+
+.main{
   background-color: rgb(247, 184, 11);
   min-height: 100vh;
   display: flex;

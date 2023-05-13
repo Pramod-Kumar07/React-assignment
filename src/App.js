@@ -1,13 +1,11 @@
-import TodoList from './component/molecules/TodoList';
-import './App.css';
+import TodoList from './component/organism/TodoList';
+import styles from './App.module.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+  return (    
+      <div className={styles.main}>
         <TodoList/>
-      </header>
-    </div>
+      </div>    
   );
 }
 
