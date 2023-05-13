@@ -6,7 +6,6 @@ function InputTask(props) {
     const[inputTask, setInputTask] = useState('');
 
     function handelEnter(e){
-      console.log(e)
       if(e.keyCode===13){
         props.addList(inputTask)
         setInputTask('')

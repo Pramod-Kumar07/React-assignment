@@ -1,8 +1,41 @@
-.list{
+.wrapper{
     border: 0.1rem solid white ;
-    border-radius: 10px;
+    border-radius: 7px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 5px;
     padding: 0 1rem;
+}
+
+.list{   
+    color: white;
+    text-transform: capitalize;
+}
+
+.strike{
+    color: white;
+    text-transform: capitalize;
+    text-decoration:line-through;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.complete{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-right: 0.8rem;
+    text-decoration: none;
+}
+
+.button{
+    background-color: red;
+    border-radius: 5px;
+    font-size:medium;
 }

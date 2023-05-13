@@ -1,20 +1,26 @@
-import React from "react";
+import React, {useState }from "react";
 import styles from "./List.module.css"
 import { FaTimes } from "react-icons/fa"
 
 function List(props) {
+    const [isClick, setIsClick]= useState(false);
+
+    function handleComplete(){
+        setIsClick(!isClick);
+    }
 
     function handelClick() {
         props.deleteItem(props.index)
     }
 
     return (
-            
-            <div className={styles.list}>
+            <div className={styles.wrapper}>
+            <div className={!isClick ? styles.list : styles.strike}>
             {props.item}
-                <div>
-                <button className={styles.button}>Complete</button>
-                <FaTimes className={styles.cross} onClick={handelClick}  />
+            </div>
+                <div className={styles.container}>
+                <button onClick={handleComplete} className={styles.complete}>Complete</button>
+                <FaTimes className={styles.button} onClick={handelClick}  />
                 </div>
             </div>
         
