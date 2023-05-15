@@ -1,4 +1,4 @@
-import React, {useState }from "react";
+import React, {useState, useEffect }from "react";
 import styles from "./List.module.css"
 import { FaTimes } from "react-icons/fa"
 
@@ -9,8 +9,11 @@ function List(props) {
         setIsClick(!isClick);
     }
 
+    useEffect(()=>console.log('update click'),
+    [isClick]);
+
     function handelClick() {
-        props.deleteItem(props.index)
+        props.deleteItem(props.index);
     }
 
     return (
@@ -19,7 +22,7 @@ function List(props) {
             {props.item}
             </div>
                 <div className={styles.container}>
-                <button onClick={handleComplete} className={styles.complete}>Complete</button>
+                <button onClick={handleComplete} className={styles.complete}>{!isClick ? 'Complete' : 'Completed'}</button>
                 <FaTimes className={styles.button} onClick={handelClick}  />
                 </div>
             </div>
