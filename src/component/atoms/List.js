@@ -9,8 +9,6 @@ function List(props) {
         setIsClick(!isClick);
     }
 
-    useEffect(()=>console.log('update click'),
-    [isClick]);
 
     function handelClick() {
         props.deleteItem(props.index);
