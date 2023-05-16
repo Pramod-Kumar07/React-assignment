@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { FaGlobe, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "./../logo.png";
-import picture from "./../picture.jpg";
-import { BsFillPlayFill } from "react-icons/bs";
 import "./header.css";
+import {NavLink} from 'react-router-dom'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,12 +19,24 @@ function Header() {
         </div>
         <div className="menu">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Videos</li>
-            <li>Contact</li>
-            <li className="active">Login</li>
+            <li>
+              <NavLink to='/'>Home</NavLink>
+            </li>
+            <li>
+              <NavLink to='/About'>About</NavLink>
+            </li>
+            <li>
+              <NavLink to='/Projects'>Projects</NavLink>
+            </li>
+            <li>
+              <NavLink to='/Videos'>Videos</NavLink>
+            </li>
+            <li>
+              <NavLink to='/Contact'>Contact</NavLink>
+            </li>
+            <li className="active">
+              <NavLink to='/Login'>Login</NavLink>
+            </li>
           </ul>
           <div className="hamburger" onClick={toggleBar}>
             {menuOpen ? <FaTimes /> : <FaBars />}
@@ -33,32 +44,29 @@ function Header() {
         </div>
       </div>
 
-      <div className="hero">
-        <div className="hero_image">
-          <img src={picture} alt="hero" />
-        </div>
-        <div className="hero_content">
-          <div className="hero_text">
-            <h1>Be There</h1>
-            <p>Deliver brilliant messages in the moments that truly define your brand</p>
-          </div>
-          <div className="hero_btn">
-            <button>
-              <a href="#">See How</a> <BsFillPlayFill />
-            </button>
-          </div>
-        </div>
-      </div>
+      
 
       <div className={`sidebar ${menuOpen ? "show" : ""}`}>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Videos</li>
-          <li>Contact</li>
-          <li>Login</li>
-        </ul>
+      <ul>
+            <li>
+              <NavLink to='/'>Home</NavLink>
+            </li>
+            <li>
+              <NavLink to='/About'>About</NavLink>
+            </li>
+            <li>
+              <NavLink to='/Projects'>Projects</NavLink>
+            </li>
+            <li>
+              <NavLink to='/Videos'>Videos</NavLink>
+            </li>
+            <li>
+              <NavLink to='/Contact'>Contact</NavLink>
+            </li>
+            <li className="active">
+              <NavLink to='/Login'>Login</NavLink>
+            </li>
+          </ul>
       </div>
     </div>
   );

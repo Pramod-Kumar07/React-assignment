@@ -34,70 +34,23 @@
   gap: 30px;
   font-size: 20px;
   padding: 10px;
+  color: white;
+  text-decoration: none;
 }
 .menu ul li {
   padding: 5px;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
-.menu .active {
+.active {
   background-color: white;
   color:  rgb(100, 12, 12);
-}
-
-.hero {
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  padding: 80px;
-}
-.hero_image {
-  flex-basis: 50%;
-}
-
-.hero_image img {
-  width: 100%;
-}
-
-.hero_content {
-  display: flex;
-  flex-basis: 50%;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero_text h1 {
-  font-size: 75px;
-  padding: 15px;
-}
-.hero_text p {
-  font-size: 30px;
-  padding: 15px;
-}
-
-.hero_btn {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-}
-
-.hero_btn button {
-  display: flex;
-  justify-content: space-evenly;
-  border-radius: 20px;
-  width: 150px;
-  padding: 10px;
-  cursor: pointer;
-}
-.hero_btn button a {
   text-decoration: none;
-  margin-top: 3px;
-  color: black;
 }
-.hero_btn svg {
-  font-size: 20px;
-}
+
+
 .hamburger {
   display: none;
 }
