@@ -1,12 +1,11 @@
-
+import React from 'react';
 import './App.css';
+import User from './component/user/user';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <User />
     </div>
   );
 }
