@@ -20,22 +20,22 @@ function Header() {
         <div className="menu">
           <ul>
             <li>
-              <NavLink to='/'>Home</NavLink>
+              <NavLink className='link' to='/'>Home</NavLink>
             </li>
             <li>
-              <NavLink to='/About'>About</NavLink>
+              <NavLink className='link' to='/About'>About</NavLink>
             </li>
             <li>
-              <NavLink to='/Projects'>Projects</NavLink>
+              <NavLink className='link' to='/Projects'>Projects</NavLink>
             </li>
             <li>
-              <NavLink to='/Videos'>Videos</NavLink>
+              <NavLink className='link' to='/Videos'>Videos</NavLink>
             </li>
             <li>
-              <NavLink to='/Contact'>Contact</NavLink>
+              <NavLink className='link' to='/Contact'>Contact</NavLink>
             </li>
             <li className="active">
-              <NavLink to='/Login'>Login</NavLink>
+              <NavLink className='link' to='/Login'>Login</NavLink>
             </li>
           </ul>
           <div className="hamburger" onClick={toggleBar}>
@@ -49,22 +49,22 @@ function Header() {
       <div className={`sidebar ${menuOpen ? "show" : ""}`}>
       <ul>
             <li>
-              <NavLink to='/'>Home</NavLink>
+              <NavLink className='link' to='/'>Home</NavLink>
             </li>
             <li>
-              <NavLink to='/About'>About</NavLink>
+              <NavLink className='link' to='/About'>About</NavLink>
             </li>
             <li>
-              <NavLink to='/Projects'>Projects</NavLink>
+              <NavLink className='link' to='/Projects'>Projects</NavLink>
             </li>
             <li>
-              <NavLink to='/Videos'>Videos</NavLink>
+              <NavLink className='link' to='/Videos'>Videos</NavLink>
             </li>
             <li>
-              <NavLink to='/Contact'>Contact</NavLink>
+              <NavLink className='link' to='/Contact'>Contact</NavLink>
             </li>
             <li className="active">
-              <NavLink to='/Login'>Login</NavLink>
+              <NavLink className='link' to='/Login'>Login</NavLink>
             </li>
           </ul>
       </div>

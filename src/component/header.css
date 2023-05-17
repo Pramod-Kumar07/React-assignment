@@ -40,14 +40,12 @@
 .menu ul li {
   padding: 5px;
   cursor: pointer;
-  text-decoration: none;
-  color: white;
 }
 
-.active {
-  background-color: white;
-  color:  rgb(100, 12, 12);
+.link{
   text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
 
@@ -62,10 +60,10 @@
 @media (max-width: 576px) {
   .sidebar {
     position: fixed;
-    top: 9%;
+    top: 7%;
     right: 0px;
-    width: 250px;
-    height: 70%;
+    left: 0px;
+    bottom: 0px;
     background-color:  rgb(100, 12, 12);
     color: white;
     display: block;
