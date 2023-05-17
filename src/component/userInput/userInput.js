@@ -15,7 +15,7 @@ function UserInput(props) {
     <div className={styles.input}>
         <input 
             type='text' 
-            placeholder='add user' 
+            placeholder='Add user' 
             value={user}
             onChange={(e)=>setUser(e.target.value)}
             onKeyDown={handelEnter}
@@ -24,4 +24,4 @@ function UserInput(props) {
   )
 }
 
-export default UserInput
+export default UserInput;

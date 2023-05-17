@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './userInput.module.css';
+import styles from './userList.module.css';
 
 function UserList(props) {
 

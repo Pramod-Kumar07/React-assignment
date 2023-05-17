@@ -19,12 +19,14 @@ function User() {
 
   return (
     <div className={styles.main}>
+      <div className={styles.content}>
         {
             userName.map((data,i)=>{
                return <UserList data={data} key={i} index={i} deleteData={deleteData} />
             })
         }
         <UserInput addUser={addUser} />
+      </div>
     </div>
   )
 }
