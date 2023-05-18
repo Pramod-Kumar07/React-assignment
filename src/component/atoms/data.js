@@ -35,7 +35,7 @@ const questionsData=[{
     correctAns:"Canada"
 },{
     questionNum:8,
-    question:"Select the set of numbers that is similar to the following set: (11,16,31) ?",
+    question:"Select the set of numbers that is similar to the following set: (11,16,31)?",
     options:["(17,22,37)","(29,34,41)","(19,24,31)","(23,28,31)"],
     correctAns:"(17,22,37)"
 },{

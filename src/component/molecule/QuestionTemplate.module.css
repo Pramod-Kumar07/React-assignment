@@ -1,0 +1,38 @@
+.container{
+    height: 60%;
+    width: 40%;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    background-color: teal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.questionNumber{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.question{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.8rem;    
+}
+
+.option{
+    list-style-type: disc;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+    padding: 0.2rem 3rem 0.2rem 1rem;
+    text-align: left;
+}
+
+.option:hover{
+    background-color: rgb(148, 193, 193);
+    cursor: pointer;
+}

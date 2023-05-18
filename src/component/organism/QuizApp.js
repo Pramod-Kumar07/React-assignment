@@ -1,10 +1,10 @@
 import React from 'react';
-import questionsData from '../atoms/data';
+import styles from './QuizApp.module.css';
 import QuestionTemplate from '../molecule/QuestionTemplate';
 
 function QuizApp() {
   return (
-    <div>
+    <div className={styles.main}>
          <QuestionTemplate/>
     </div>
   )
