@@ -1,38 +1,99 @@
 import React, { useState } from 'react';
 import questionsData from '../atoms/data';
-import NextButton from '../atoms/NextButton';
 import styles from './QuestionTemplate.module.css';
 
 function QuestionTemplate() {
   const [currentQus, setCurrentQus]=useState(0);
-  const [correct, setCorrect]= useState(0);
+  const [answer, setAnswer]= useState('');
+  const [showResult, setShowResult]= useState(false);
+  const [result, setResult]=useState({
+    score: 0,
+    correctAnswers:0,
+    wrongAnswers:0
+  })
 
-  function handelButton(index){
-    setCurrentQus(index);
+
+  function handleAnswer(option){
+    if(option===questionsData[currentQus].correctAns){
+      setAnswer(true)
+    }else{
+      setAnswer(false)
+    }
   }
 
-  function handelAnswer(){
+  function handleNext() {
+    setResult((prev)=>
+    answer ? {
+      ...prev,
+      score: prev.score +2,
+      correctAnswers: prev.correctAnswers + 1
+    } : {
+      ...prev,
+      wrongAnswers: prev.wrongAnswers + 1
+    })
+    if(currentQus !== questionsData.length-1){
+      setCurrentQus(currentQus + 1)
+    }else{
+      setCurrentQus(0);
+      setShowResult(true);
+    }
+  }
 
+  function handleRestart(){
+    setCurrentQus(0);
+    setShowResult(false);
+    setResult({
+      score:0,
+      correctAnswers:0,
+      wrongAnswers:0
+    })
   }
 
   return (
     <div className={styles.container}>
-      <div 
-        className={styles.questionNumber}>Question ({questionsData[currentQus].questionNum})
+      {!showResult ? 
+      (
+      <>
+      <div className={styles.questionNumber}>
+          Question({currentQus+1})
       </div>
-      <div 
-        className={styles.question}>{questionsData[currentQus].question}
+      <div className={styles.question}>
+        {questionsData[currentQus].question}
       </div>
-        <div 
-          className={styles.options}>{questionsData[currentQus].options.map((option, index)=>{
-            return (<ul>
-              <li onClick={handelAnswer} key={index} className={styles.option}>{option }  </li>
+        <div className={styles.options}>
+          {questionsData[currentQus].options.map((option, index)=>(<ul>
+              <li onClick={()=>handleAnswer(option)} key={index} className={styles.option}>
+                {option }  
+              </li>
               </ul>)
-            })}
+            )}
         </div>
       <div>
-        <NextButton handelButton={handelButton} lastQus={questionsData.length}/>
+        <button onClick={handleNext} className={styles.next}>
+          {currentQus === questionsData.length-1 ? "Finish" : "Next" }
+        </button>
       </div>
+      </>
+      ) : (
+        <div>
+          <h3>Result</h3>
+          <p>
+            Total Questions : {questionsData.length}
+          </p>
+          <p>
+            Total Score : {result.score}
+          </p>
+          <p>
+          Correct Answers : {result.correctAnswers}
+          </p>
+          <p>
+            Wrong Answers : {result.wrongAnswers}
+          </p>
+          <button className={styles.restart} onClick={handleRestart}>
+            Restart
+          </button>
+        </div>
+      )}
     </div>
   )
 }
