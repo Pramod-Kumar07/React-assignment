@@ -37,6 +37,16 @@
     cursor: pointer;
 }
 
+.selected{
+    background-color: rgb(3, 79, 79);
+    list-style-type: disc;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+    padding: 0.2rem 3rem 0.2rem 1rem;
+    text-align: left;
+}
+
+
 .next{
     background-color: rgb(239, 9, 9);
     color: white;

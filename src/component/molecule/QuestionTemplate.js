@@ -5,6 +5,7 @@ import styles from './QuestionTemplate.module.css';
 function QuestionTemplate() {
   const [currentQus, setCurrentQus]=useState(0);
   const [answer, setAnswer]= useState('');
+  const [click, setClick]= useState('');
   const [showResult, setShowResult]= useState(false);
   const [result, setResult]=useState({
     score: 0,
@@ -13,15 +14,17 @@ function QuestionTemplate() {
   })
 
 
-  function handleAnswer(option){
+  function handleAnswer(option, index){
+    setClick(index);
     if(option===questionsData[currentQus].correctAns){
-      setAnswer(true)
+      setAnswer(true);
     }else{
-      setAnswer(false)
+      setAnswer(false);
     }
   }
 
   function handleNext() {
+    setClick('');
     setResult((prev)=>
     answer ? {
       ...prev,
@@ -34,7 +37,6 @@ function QuestionTemplate() {
     if(currentQus !== questionsData.length-1){
       setCurrentQus(currentQus + 1)
     }else{
-      setCurrentQus(0);
       setShowResult(true);
     }
   }
@@ -62,7 +64,7 @@ function QuestionTemplate() {
       </div>
         <div className={styles.options}>
           {questionsData[currentQus].options.map((option, index)=>(<ul>
-              <li onClick={()=>handleAnswer(option)} key={index} className={styles.option}>
+              <li onClick={()=>handleAnswer(option, index)} key={index} className={click===index ? styles.selected : styles.option}>
                 {option }  
               </li>
               </ul>)
