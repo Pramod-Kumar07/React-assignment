@@ -23,15 +23,14 @@ function SearchBar() {
   
 
     function handleSearch(searchedItem){
-      console.log(searchedItem)
-      setSearch(searchedItem)
+      setSearch(searchedItem);
     }
 
   return (
     <div className={styles.main}>
       <div className={styles.SearchBar}>
         <input className={styles.input} type='text' value={search} placeholder='Search Indian States...' onChange={(e)=>setSearch(e.target.value)} />
-        <button className={styles.button} onClick={()=>handleSearch(search)}><FaSearch/></button>
+        <button className={styles.button} ><FaSearch/></button>
       </div>
         <div className={styles.suggestions}>
           {
@@ -39,7 +38,7 @@ function SearchBar() {
               const searchedItem = search.toLowerCase();
               const state = states.state_name.toLowerCase();
               return searchedItem && state.startsWith(searchedItem) && state !== searchedItem
-            }).map((states)=> <div className={styles.list} key={states.id} onClick={()=>handleSearch(states.state_name)}>
+            }).map((states)=> <div className={styles.list} key={states.state_id} onClick={()=>handleSearch(states.state_name)}>
               {states.state_name}
               </div>)
           }
