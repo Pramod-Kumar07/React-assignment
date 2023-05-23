@@ -6,6 +6,7 @@ import {AiOutlineFundProjectionScreen } from 'react-icons/ai';
 import { RiPagesFill } from 'react-icons/ri';
 import { HiMenu } from 'react-icons/hi';
 import { RxCross2 } from 'react-icons/rx';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [ toggle, setToggle ] = useState(false);
@@ -21,12 +22,12 @@ function Navbar() {
             <h1><span className={styles.first}>PRA</span><span className={styles.last}>MOD</span></h1>
         </div>
         <div className={styles.link_container}>
-            <a className={styles.links} href='Home'><FaHouseUser/>Home</a>
-            <a className={styles.links} href='About'><FaUserAlt/>About</a>
-            <a className={styles.links} href='Skills'><GiMagicSwirl/>Skills</a>
-            <a className={styles.links} href='Project'><AiOutlineFundProjectionScreen/>Project</a>
-            <a className={styles.links} href='Contact'><FaPhoneAlt/>Contact</a>
-            <a className={styles.links} href='Resume'><RiPagesFill/>Resume</a>
+            <Link className={styles.links} to='/'><FaHouseUser/>Home</Link>
+            <Link className={styles.links} to='/About'><FaUserAlt/>About</Link>
+            <Link className={styles.links} to='/Skills'><GiMagicSwirl/>Skills</Link>
+            <Link className={styles.links} to='/Project'><AiOutlineFundProjectionScreen/>Project</Link>
+            <Link className={styles.links} to='/Contact'><FaPhoneAlt/>Contact</Link>
+            <Link className={styles.links} to='/Resume'><RiPagesFill/>Resume</Link>
         </div>
         <div className={styles.toggle} onClick={handleToggle}>
             {
@@ -38,12 +39,12 @@ function Navbar() {
         {
             toggle ? 
              <div className={styles.toggleContainer}>
-            <a className={styles.togglelinks} href='Home'><FaHouseUser/> Home</a>
-            <a className={styles.togglelinks} href='About'><FaUserAlt/> About</a>
-            <a className={styles.togglelinks} href='Skills'><GiMagicSwirl/> Skills</a>
-            <a className={styles.togglelinks} href='Project'><AiOutlineFundProjectionScreen/> Project</a>
-            <a className={styles.togglelinks} href='Contact'><FaPhoneAlt/> Contact</a>
-            <a className={styles.togglelinks} href='Resume'><RiPagesFill/> Resume</a>
+            <Link className={styles.togglelinks} to='/'><FaHouseUser/> Home</Link>
+            <Link className={styles.togglelinks} to='/About'><FaUserAlt/> About</Link>
+            <Link className={styles.togglelinks} to='/Skills'><GiMagicSwirl/> Skills</Link>
+            <Link className={styles.togglelinks} to='/Project'><AiOutlineFundProjectionScreen/> Project</Link>
+            <Link className={styles.togglelinks} to='/Contact'><FaPhoneAlt/> Contact</Link>
+            <Link className={styles.togglelinks} to='/Resume'><RiPagesFill/> Resume</Link>
             </div> 
         : ''
         }
