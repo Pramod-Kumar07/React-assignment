@@ -1,0 +1,47 @@
+.form{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container{
+    display: flex;
+}
+.input{
+    border: 2px solid black;
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+    padding-left: 1rem;
+    border-radius: 0.4rem;
+    width: 17rem;
+}
+
+.button{
+    border: 2px solid black;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.todos{
+    list-style: none;
+    padding: 0;
+    width: 17rem;
+}
+
+.list{
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 0 1rem;
+}
