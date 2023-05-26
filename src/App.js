@@ -1,15 +1,12 @@
-import styles from './App.module.css';
-import { provider } from 'react-redux';
-import store from './component/store/store';
-import todoList from './component/todoList/todoList';
+
+// import './App.css';
+import AddTodo from './Components/AddTodo';
 
 function App() {
   return (
-    <provider store={store}>
-    <div className={styles.App}>
-      <todoList/>
+    <div className="App">
+      <AddTodo />
     </div>
-    </provider>
   );
 }
 
