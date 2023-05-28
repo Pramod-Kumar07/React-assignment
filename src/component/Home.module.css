@@ -1,0 +1,28 @@
+.main{
+    background-color: aqua;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.footer{
+    position: absolute;
+    bottom: 2%;
+    left: 24%;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 7rem;
+}
+
+.link:hover{
+    color: red;
+    text-decoration: underline;
+}
