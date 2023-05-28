@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { setLoading, getAllMovies, addFav } from "./MovieSlice";
+import { setLoading, getAllMovies } from "./MovieSlice";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./Movies.module.css";
 

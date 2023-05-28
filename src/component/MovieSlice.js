@@ -19,13 +19,6 @@ const movieSlice = createSlice({
     reducers: {
         setLoading: (state, action ) => {
             state.loading = action.payload;
-        },
-        addFav: (state = [{}], action)=> {
-            const favourites={
-                movies: action.payload,
-                loading: false
-            };
-            state.includes(!action.payload) && state.push(favourites);
         },        
     },
     extraReducers: (builder)=> {
@@ -46,5 +39,5 @@ const movieSlice = createSlice({
 
 
 
-export const { setLoading, addFav } = movieSlice.actions;
+export const { setLoading } = movieSlice.actions;
 export const movieReducer = movieSlice.reducer;
