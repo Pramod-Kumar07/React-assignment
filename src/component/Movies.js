@@ -1,16 +1,20 @@
 import React, { useEffect } from "react";
 import { setLoading, getAllMovies } from "./MovieSlice";
+import { addMovie } from "./FavMovieSlice";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./Movies.module.css";
 
-function Products () {
+function Movies () {
     const moviesState = useSelector((state)=> state.movies);
     const dispatch = useDispatch();
 
     useEffect(()=>{
         dispatch(setLoading(!moviesState.loading));
-        dispatch(getAllMovies())
+        dispatch(getAllMovies());
     },[])
+
+    // const { movies } = moviesState;
+    dispatch(addMovie(moviesState));
 
     return(
         <div>
@@ -36,4 +40,4 @@ function Products () {
     )
 }
 
-export default Products;
+export default Movies;
