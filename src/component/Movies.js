@@ -14,7 +14,6 @@ function Movies () {
     },[])
     
     function handleFavs(key) {
-        console.log("added", key)
         dispatch(addMovie(key))
     }
 

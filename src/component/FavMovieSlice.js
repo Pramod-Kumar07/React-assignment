@@ -7,12 +7,13 @@ const FavMovieSlice = createSlice({
     },
     reducers:{
         addMovie: (state, action)=>{
-            // state.favMovie = [...state.favMovie, action.payload];
-            // console.log("stateeeeee",state);
-            state.favMovie = state.favMovie.push(action.payload);
+            const favmove= state.favMovie.find((e)=>e.imdbID===action.payload.imdbID)
+            if(!favmove){
+                state.favMovie.push(action.payload);
+            }
         },
         deleteMovie: (state, action)=>{
-            state.favMovie=state.favMovie.filter((movies)=>movies.imdbID !== action.payload)
+            state.favMovie = state.favMovie.filter((movies)=>movies.imdbID !== action.payload);
         }
     }
 })
