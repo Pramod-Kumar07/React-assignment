@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Movies from './Movies';
 
 function Favourites() {
     const favMovieState = useSelector((state)=>state.favMovie);

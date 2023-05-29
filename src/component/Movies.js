@@ -12,9 +12,11 @@ function Movies () {
         dispatch(setLoading(!moviesState.loading));
         dispatch(getAllMovies());
     },[])
-
-    // const { movies } = moviesState;
-    dispatch(addMovie(moviesState));
+    
+    function handleFavs(key) {
+        console.log("added", key)
+        dispatch(addMovie(key))
+    }
 
     return(
         <div>
@@ -28,7 +30,7 @@ function Movies () {
                     <h3 className={styles.name}>{movies.Title}</h3>
                     <span>({movies.Year})</span>
                     <br></br>
-                    <button className={styles.button}>Add to fav</button>
+                    <button onClick={()=>handleFavs(movies)} className={styles.button}>Add to fav</button>
                     </div>
                     )
                     }
