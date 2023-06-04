@@ -1,0 +1,16 @@
+.TextEditor{
+    width: 210mm;
+    height: 297mm;
+    margin: 1rem auto;
+    padding: 5rem 4rem;
+}
+.div{
+    background: #EDF2FA;
+    margin-left:13px;
+    width:98%;
+    height: 100vh;
+    border-radius:34px;
+    height:38px;
+    margin-bottom: -40px;
+
+}
