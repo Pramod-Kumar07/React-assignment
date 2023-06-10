@@ -2,7 +2,10 @@
     display: flex;
     align-items: center;
     height: 10vh;
+    width: 97vw;
     padding: 0.5rem 0.6rem;
+    position: fixed;
+    top: 0;
 }
 
 .doc{
@@ -172,6 +175,10 @@
     margin: 0 1rem;
     padding: 0.5rem ;
     border-radius: 2rem;
+    position: fixed;
+    top: 12vh;
+    left: 4vw;
+    z-index:0;
 }
 
 .optionBar span{
@@ -192,4 +199,21 @@
 
 .fontsize{
     border: 0.02rem solid grey;
+}
+
+.pageContainer{
+    margin-top: 22vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.page{
+    width: 210mm;
+    height: 297mm;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 6rem 4rem;
+    text-align: left;
 }

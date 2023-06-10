@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useRef} from 'react';
 import { FcDocument } from 'react-icons/fc'; 
 import { MdFormatItalic, MdFormatLineSpacing, MdOutlineChecklist, MdOutlineInsertComment, MdOutlineLock, MdOutlineSpellcheck } from 'react-icons/md';
 import { BiAlignJustify, BiAlignLeft, BiAlignMiddle, BiAlignRight, BiCommentAdd, BiDotsVerticalRounded, BiImage, BiRedo, BiUndo, BiVideo } from 'react-icons/bi';
@@ -11,11 +11,32 @@ import { RiPencilLine } from 'react-icons/ri';
 import { BsTypeUnderline } from 'react-icons/bs';
 import { VscListOrdered } from 'react-icons/vsc';
 import { HiListBullet } from 'react-icons/hi2';
-import DriveFileMoveOutlinedIcon from '@mui/icons-material/DriveFileMoveOutlined';
-import CloudDoneOutlinedIcon from '@mui/icons-material/CloudDoneOutlined';
 import styles from './Navbar.module.css';
 
 function Navbar() {
+
+    const pageRef = useRef(null);
+
+    const handleClickBold = () => {
+        document.execCommand("bold", false, null);        
+      };
+
+    const handleClickItalic = () => {
+        document.execCommand("italic", false, null);
+    };
+
+    const handleUndo = () => {
+        document.execCommand("undo", false, null);
+    }
+
+    const handleRedo = () => {
+        document.execCommand("redo", false, null);
+    }
+
+    const handleUnderline = () => {
+        document.execCommand("underline", false, null);
+    } 
+
   return (
     <Fragment>
     <div className={styles.main}>
@@ -26,8 +47,6 @@ function Navbar() {
             <div className={styles.untitled}>
                 <div className={styles.text}> Untitled document </div>
                 <div className={styles.star}><AiOutlineStar/></div>
-                <div><DriveFileMoveOutlinedIcon/></div>
-                <div><CloudDoneOutlinedIcon/></div>
             </div>
             <div className={styles.options}>
                 <span>File</span>
@@ -49,8 +68,8 @@ function Navbar() {
     </div>
     <div>
         <div className={styles.optionBar}>
-            <span><BiUndo/></span>
-            <span><BiRedo/></span>
+            <span onClick={handleUndo}><BiUndo/></span>
+            <span onClick={handleRedo}><BiRedo/></span>
             <span><AiOutlinePrinter/></span>
             <span><MdOutlineSpellcheck/></span>
             <span><TfiPaintRoller/></span>
@@ -80,9 +99,9 @@ function Navbar() {
             <span className={styles.fontsize}>11</span>
             <span>+</span>
             <span className={styles.vertical}>|</span>
-            <span>B</span>
-            <span><MdFormatItalic/></span>
-            <span><BsTypeUnderline/></span>
+            <span onClick={handleClickBold}>B</span>
+            <span onClick={handleClickItalic}><MdFormatItalic/></span>
+            <span onClick={handleUnderline}><BsTypeUnderline/></span>
             <span><AiOutlineFontColors/></span>
             <span><FaHighlighter/></span>
             <span className={styles.vertical}>|</span>
@@ -106,6 +125,13 @@ function Navbar() {
                 <span><BiDotsVerticalRounded/></span>
                 <span><RiPencilLine/></span>
                 <span><IoMdArrowDropdown/></span>
+        </div>
+    </div>
+    <div className={styles.pageContainer}>
+        <div 
+            contentEditable='true' 
+            className={styles.page}
+            ref={pageRef}>
         </div>
     </div>
     </Fragment>
