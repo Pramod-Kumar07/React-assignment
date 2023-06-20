@@ -1,0 +1,29 @@
+.main{
+    box-sizing: border-box;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/817/87/825/programmer-coder-admin-administrator-wallpaper-preview.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 85vh;
+    position: fixed;
+}
+
+.wrapper{
+    border: 3px solid red;
+    height: 80%;
+    width: 50%;
+    text-align: justify;
+}
+
+.wrapper hr{
+    color: black;
+}
+
+.dp{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 80%;
+    width: 30%;
+}

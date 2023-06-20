@@ -11,7 +11,7 @@ function Home() {
           <h1>Welcome...</h1>
         </div>
         <div>
-          <h1>I'M PRAMOD KUMAR</h1>
+          <h1>I'M <span className={styles.first}>PRA</span><span className={styles.last}>MOD</span> KUMAR</h1>
         </div>
         <div>
           <h1>FRONT END DEVELOPER</h1>

@@ -1,5 +1,6 @@
 .main{
     background-color: rgb(3, 2, 16);
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +50,7 @@
     color: red;
     text-decoration: underline;
     box-shadow: 1rem 1rem 5rem red;
-    transform: scale(1.4, 1.4);
+    transform: scale(1.1, 1.1);
     transition-duration: 1s;
 }
 
@@ -92,6 +93,6 @@
     color: red;
     text-decoration: underline;
     box-shadow: 1rem 1rem 5rem red;
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
     transition-duration: 1s;
 }
