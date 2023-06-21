@@ -1,0 +1,47 @@
+.bg{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/576/808/995/harry-potter-magic-fantasy-art-books-wallpaper-preview.jpg');
+    background-size: cover;
+    filter: blur(2px);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 85vh;
+    position: fixed;
+    top: 15vh;
+}
+
+.logoContainer{
+    position: relative;
+    top: 17vh;
+    padding-left: 4rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2);
+    row-gap: 3rem;
+    column-gap: 2.5rem;
+}
+
+.logo{
+    height: 25vh;
+    width: 25vh;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.logo h3{
+    color: antiquewhite;
+    margin-top: 0;
+}
+
+.github{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.skills{
+    position: relative;
+    top: 15vh;
+}
