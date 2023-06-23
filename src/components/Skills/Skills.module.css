@@ -23,13 +23,20 @@
 
 .logo{
     height: 25vh;
-    width: 25vh;
+    width: 25vh;   
+    padding: 0.2rem;     
+}
+
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
 }
 
 .logo img{
     height: 100%;
     width: 100%;
 }
+
 
 .logo h3{
     color: antiquewhite;
@@ -43,5 +50,38 @@
 
 .skills{
     position: relative;
-    top: 15vh;
+    top: 14vh;
+    text-align: left;  
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.skills span{
+    background: linear-gradient(to right ,orange, blue, yellow, skyblue, purple, white);
+    background-clip: text;    
+    color: transparent;
+    animation-name: skill;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+@keyframes skill{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 25vw;
+    }
+    50%{
+        left: 50vw;
+    }
+    75%{
+        left: 75vw;
+    }
+    100%{
+        left: 100vw;
+    }
 }

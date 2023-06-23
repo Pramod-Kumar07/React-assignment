@@ -1,6 +1,6 @@
 .main{
     box-sizing: border-box;
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/297/99/740/blue-black-pattern-matrix-wallpaper-preview.jpg');
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/879/812/880/harry-potter-artistic-blue-castle-wallpaper-preview.jpg');
     background-size: cover;    
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ p{
 }
 
 .dp{
-    border: 0.1rem solid black;
+    box-shadow: 0.1rem 0.1rem 4rem rgba(0,0,0,0.4);
     border-radius: 50%;
     height: 80%;
     width: 30%;

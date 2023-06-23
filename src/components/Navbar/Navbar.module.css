@@ -76,6 +76,7 @@
     padding: 2rem;
     gap: 1rem;
     position: fixed;
+    top: 15vh;
     right: 0;
     z-index: 20;
 }
@@ -95,4 +96,17 @@
     box-shadow: 1rem 1rem 5rem red;
     transform: scale(1.1, 1.1);
     transition-duration: 1s;
+}
+
+@media screen and (max-width : 746) {
+    .link_container{
+        display: none;
+    }
+
+    .toggle{
+        position: relative;
+        color: white;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
 }

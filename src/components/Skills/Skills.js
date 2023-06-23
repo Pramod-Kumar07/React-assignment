@@ -13,7 +13,7 @@ function Skills() {
   return (
     <Fragment>
     <div className={styles.bg}></div> 
-    <h2 className={styles.skills}>MAGIC SET</h2>
+    <h2 className={styles.skills}><span>SKILL SET</span></h2>
     <div className={styles.logoContainer}>         
         <div className={styles.logo}>
             <img src={HTML} alt='html logo' />
