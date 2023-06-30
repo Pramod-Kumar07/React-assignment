@@ -1,6 +1,6 @@
 .main{
     box-sizing: border-box;
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/879/812/880/harry-potter-artistic-blue-castle-wallpaper-preview.jpg');
+    background-color: bisque;
     background-size: cover;    
     display: flex;
     align-items: center;
@@ -43,12 +43,12 @@ p{
     border-radius: 0.5rem;
     display: inline;
     padding: 0.6rem;
-    background-color: rgb(5, 5, 35);
+    background-color: darkslategrey;
     font-size: medium;
 }
 
 .resume:hover{
-    background-color: rgb(34, 4, 82);
+    background-color: darkslategrey;
     color: rgb(167, 134, 101);
     font-weight: bold;
 }
@@ -59,8 +59,6 @@ p{
 }
 
 .dp{
-    box-shadow: 0.1rem 0.1rem 4rem rgba(0,0,0,0.4);
-    border-radius: 50%;
-    height: 80%;
-    width: 30%;
+    height: 150%;
+    width: 40%;
 }

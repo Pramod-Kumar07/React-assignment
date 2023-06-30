@@ -1,5 +1,5 @@
 .main{
-    background-color: rgb(3, 2, 16);
+    background-color:darkslategrey;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -13,8 +13,7 @@
 }
 
 .first{
-    color: red;
-    box-shadow: 1rem 1rem 5rem red;
+    color:bisque;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -24,7 +23,6 @@
 
 .last{
     color: white;
-    box-shadow: 1rem 1rem 5rem;
     font-family: 'Times New Roman', Times, serif;
 
 }
@@ -46,10 +44,13 @@
 
 }
 
-.links:hover{
-    color: red;
+.links:active{
     text-decoration: underline;
-    box-shadow: 1rem 1rem 5rem red;
+}
+
+.links:hover{
+    color:bisque;
+    text-decoration: underline;
     transform: scale(1.1, 1.1);
     transition-duration: 1s;
 }
@@ -69,13 +70,13 @@
 .toggleContainer{
     height: 50%;
     width: 10%;
-    background-color: rgb(3, 2, 16);
+    background-color:darkslategrey;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 2rem;
     gap: 1rem;
-    position: fixed;
+    position: absolute;
     top: 15vh;
     right: 0;
     z-index: 20;
@@ -90,10 +91,9 @@
     align-items: center;
 }
 
-.togglelinks:hover{    
-    color: red;
+.togglelinks:hover{ 
+    color:bisque;
     text-decoration: underline;
-    box-shadow: 1rem 1rem 5rem red;
     transform: scale(1.1, 1.1);
     transition-duration: 1s;
 }
