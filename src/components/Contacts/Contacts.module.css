@@ -1,37 +1,75 @@
-.bg{
-    background-color: bisque;
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(4px);
+.wrapper{
     height: 85vh;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     position: fixed;
     top: 15vh;
-}
-
-.main{
-    height: 85vh;
-    width: 100vw;
-    box-sizing: border-box;
+    background: bisque;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
-    position: relative;
-    top: 15vh;
+    justify-content: space-around;
 }
 
-.main p{
+.bg{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.contactContainer{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;  
+}
+
+.content h1{
     color: rgb(8, 8, 46);
-    margin: 1rem;
-    font-size: larger;
+    margin-bottom: 0;
+}
+
+.content p{
+    color: rgb(8, 8, 46);
+    margin: 0.2rem;
+    font-size: large;
     font-weight: 700;
 }
 
-.main span{
-    font-size: 1.5rem;
+.content span{
+    font-size: 1rem;
     color: rgb(35, 12, 56);
+}
+
+.socialMedia{
+    padding: 2rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.socialMedia a{
+    text-decoration: none;
+    color: darkslategray;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem darkslategray, -0.1rem -0.1rem 0.2rem darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia a:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    transition-delay: 0.2s;
 }

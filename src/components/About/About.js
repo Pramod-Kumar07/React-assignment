@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import { Link } from 'react-router-dom';
-import dp from './dpp.png';
+import dp from './dp.jpg';
 
 function About() {
   return (

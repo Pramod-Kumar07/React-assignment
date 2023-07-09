@@ -30,6 +30,9 @@
 
 .logo:hover{
     cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0.2s;
 }
 
 .logo img{

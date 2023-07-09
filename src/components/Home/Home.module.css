@@ -4,7 +4,7 @@
     position: fixed;
     top: 15vh;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     height: 85vh;
 }
 
@@ -20,6 +20,7 @@
     font-size: x-large;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
+    width: 70%;
 }
 
 .divs h1{
